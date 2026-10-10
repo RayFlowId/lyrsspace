@@ -14,7 +14,7 @@ Example:
   "name": "Rayy",
   "handle": "@rayy · Creative designer & web explorer",
   "bio": "Your new bio goes here.",
-  "avatar": "assets/avatar.svg",
+  "avatar": "rayy.jpg",
   "tags": ["✳ Design", "⌘ Web", "☕ Matcha"],
   "title": "Rayy"
 }
