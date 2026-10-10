@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#090909"><meta name="description" content="LYRS SPACE — Your world, your identity.">
+<title>LYRS SPACE — Your world, your identity</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#home"><span class="logo">L</span> LYRS <span class="muted">SPACE</span></a>
+  <button id="menuBtn" class="menu-btn" aria-label="Open navigation">☰</button>
+  <nav id="nav"><a href="#home">Home</a><a href="#profile">Profile</a><a href="#projects">Projects</a><a href="#music">Music</a></nav>
+  <a class="nav-cta" href="#projects">Explore space ↗</a>
+</header>
+<main id="home">
+<section class="hero">
+ <div class="hero-copy">
+  <div class="eyebrow"><i></i> PERSONAL DIGITAL SPACE</div>
+  <h1>Your world.<br><span>Your identity.</span></h1>
+  <p class="lead">A little corner of the internet to collect ideas, share creations, and make the digital world feel like yours.</p>
+  <div class="actions"><a class="primary" href="#projects">Explore my space <b>↗</b></a><a class="simple" href="#profile">Get to know me ↓</a></div>
+  <div class="signature"><span>✳</span><p>Built with curiosity.<br><b>Made by Rayy.</b></p></div>
+ </div>
+ <div class="universe" aria-label="Abstract planet illustration"><div class="orbit o1"></div><div class="orbit o2"></div><div class="orbit o3"></div><div class="moon"></div><div class="planet"><span></span></div><i class="star s1">✦</i><i class="star s2">✧</i><i class="star s3">·</i><small class="art-top">LYRS / 001</small><small class="art-bottom">A SPACE OF MY OWN ↗</small></div>
+</section>
+<section class="stats">
+ <div><small>CURRENT MODE</small><b><i class="green"></i> Creating things</b></div><div><small>BASED IN</small><b>Internet · Earth</b></div><div><small>SPACE VERSION</small><b>001 <span>/ PERSONAL</span></b></div>
+</section>
+<section class="section" id="profile">
+ <div class="heading"><div><small>01 — THE PERSON</small><h2>A little about <span>me.</span></h2></div><p>Not just a profile. A small introduction to the person behind the pixels.</p></div>
+ <div class="profile card"><div class="avatar-wrap"><div id="avatar" class="avatar">R</div><label for="avatarFile" class="avatar-edit">＋</label><input id="avatarFile" type="file" accept="image/*,.gif" hidden></div><div class="profile-info"><div class="name-line"><h3 id="name">Rayy</h3><span>✦</span></div><p class="handle">@rayy · Creative designer & web explorer</p><p id="bio" class="bio">I like turning little ideas into things people can explore. Currently building my own corner of the internet, one project at a time.</p><div class="tags"><span>✳ Design</span><span>⌘ Web</span><span>☕ Matcha</span></div></div><button id="editBtn" class="edit">Edit profile ↗</button></div>
+</section>
+<section class="section" id="projects">
+ <div class="heading"><div><small>02 — THINGS I'M MAKING</small><h2>Made with <span>curiosity.</span></h2></div><p>A few doors into my digital world. More experiments will find their place here.</p></div>
+ <div class="projects">
+  <a class="project featured" href="https://rayyy.my.id" target="_blank" rel="noopener"><div class="project-top"><small>PROJECT / 01</small><b>↗</b></div><div class="symbol">R<span>.</span></div><small class="type">WEB TOOL</small><h3>Rayy Online</h3><p>A web utility project from the Rayy universe.</p><footer>Visit project <span>↗</span></footer></a>
+  <a class="project" href="https://community.rayyy.my.id" target="_blank" rel="noopener"><div class="project-top"><small>PROJECT / 02</small><b>↗</b></div><div class="symbol symbol-community">◎</div><small class="type">COMMUNITY</small><h3>Community Rayy</h3><p>A home for the community and shared updates.</p><footer>Visit community <span>↗</span></footer></a>
+  <a class="project" href="https://music.rayyy.my.id" target="_blank" rel="noopener"><div class="project-top"><small>PROJECT / 03</small><b>↗</b></div><div class="symbol">♫</div><small class="type">MUSIC</small><h3>Music Space</h3><p>A separate place for music and listening.</p><footer>Visit music site <span>↗</span></footer></a>
+  <div class="project coming"><div class="project-top"><small>PROJECT / 04</small><b class="soon">IN THE WORKS</b></div><div class="symbol">＋</div><small class="type">NEXT EXPERIMENT</small><h3>Something new</h3><p>The next idea is still taking shape.</p><footer>Coming when it's ready <span>✳</span></footer></div>
+ </div>
+</section>
+<section class="section bottom-grid" id="about">
+ <div class="card about"><small>03 — THE PHILOSOPHY</small><h2>Small ideas.<br><span>Big little worlds.</span></h2><p>LYRS SPACE is a personal digital home for projects, interests, and experiments. It's allowed to grow, change, and stay a little imperfect.</p><a class="simple" href="#home">Back to the top ↑</a></div>
+ <div class="card music" id="music"><div class="music-top"><small>04 — CURRENT VIBE</small><span>● YOUR SOUNDTRACK</span></div><div class="music-row"><div class="album">♫<i></i></div><div class="music-info"><small class="type">YOUR OWN SOUNDTRACK</small><h3>Set the atmosphere.</h3><p>Add an audio file from your device to play it here.</p><label class="primary mini" for="audioFile">Choose audio ＋</label><input id="audioFile" type="file" accept="audio/*" hidden><audio id="audioPlayer" controls hidden></audio><div id="audioName" class="audio-name">No track selected</div></div></div></div>
+</section>
+<footer class="footer"><a class="brand" href="#home"><span class="logo">L</span> LYRS <span class="muted">SPACE</span></a><small>YOUR WORLD, YOUR IDENTITY.</small><small>© <span id="year"></span> RAYY · MADE ON EARTH</small></footer>
+</main>
+<dialog id="profileDialog"><form id="profileForm"><div class="dialog-head"><div><small>PERSONALIZE YOUR SPACE</small><h2>Make it <span>yours.</span></h2></div><button type="button" id="closeDialog" class="close">×</button></div><label for="nameInput">Display name</label><input id="nameInput" maxlength="32" value="Rayy"><label for="bioInput">Short bio</label><textarea id="bioInput" maxlength="180" rows="3">I like turning little ideas into things people can explore. Currently building my own corner of the internet, one project at a time.</textarea><div class="dialog-actions"><button type="button" id="cancelEdit" class="secondary">Cancel</button><button class="primary mini" type="submit">Save profile ↗</button></div><p class="note">Changes are saved in this browser only. This starter does not use accounts or a shared database.</p></form></dialog>
+<script src="app.js"></script>
+</body></html>
