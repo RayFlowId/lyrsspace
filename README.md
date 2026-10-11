@@ -1,33 +1,28 @@
-# LYRS SPACE V2
+# LYRS SPACE + LYRS LABS
 
-Personal digital space built for GitHub Pages. Responsive monochrome design, with a lime accent.
+Paket ini mempertahankan homepage LYRS SPACE yang dikirim, lalu menambahkan halaman `labs.html` yang mengikuti desain gelap dan aksen lime yang sama.
 
-## Upload
-Upload the contents of this folder to the root of your GitHub Pages repository (keep `index.html`, `style.css`, `app.js`, `profile.json`, and the `assets` folder together).
+## File
+- `index.html` — homepage LYRS SPACE, ditambah link navigasi dan kartu LYRS Labs.
+- `style.css` — style homepage asli, tidak diganti.
+- `app.js` — interaksi homepage asli.
+- `labs.html` — halaman API workspace.
+- `labs.css` dan `labs.js` — style serta fungsi API Explorer.
+- `profile.json` dan `rayy.jpg` — konfigurasi profil dan foto yang sudah ada.
+- `CNAME` — custom domain yang ada di paket awal.
 
-## Edit profile from GitHub
-Open `profile.json` in GitHub, tap the pencil icon, edit values, then commit changes. GitHub Pages will publish the changes automatically after its deployment finishes.
+## Deploy ke GitHub Pages
+1. Backup repository GitHub yang sekarang.
+2. Ekstrak ZIP ini.
+3. Upload/replace file dari folder `lyrsspace-main` ke root repository yang sama, dengan mempertahankan struktur file.
+4. Pastikan `CNAME` tetap berada di root.
+5. Setelah Pages selesai deploy, buka `https://space.rayyy.my.id/` dan pilih **Labs** di navigasi atau kartu LYRS Labs.
 
-Example:
-```json
-{
-  "name": "Rayy",
-  "handle": "@rayy · Creative designer & web explorer",
-  "bio": "Your new bio goes here.",
-  "avatar": "rayy.jpg",
-  "tags": ["✳ Design", "⌘ Web", "☕ Matcha"],
-  "title": "Rayy"
-}
-```
+## Tentang API Explorer
+Explorer berisi endpoint dari update yang diberikan, termasuk route lama jadwal salat sebagai legacy. Route baru yang direkomendasikan adalah `/v1/islami/sholat`.
 
-### Change profile picture
-1. Upload an image to the `assets` folder, e.g. `assets/rayy.jpg` (or a GIF like `assets/rayy.gif`).
-2. Edit `profile.json` and set `"avatar": "assets/rayy.jpg"`.
-3. Commit changes.
+Nama parameter, skema respons, serta autentikasi endpoint belum dipastikan dari dokumentasi endpoint satu per satu. Masukkan query parameters sebagai JSON object, misalnya `{"q":"contoh"}`, sesuai dokumentasi resmi. Request default memakai GET; POST dapat dipilih untuk endpoint yang mendukungnya.
 
-Use a relative path exactly as written. The avatar can be JPG, PNG, WebP, or GIF. Keep the JSON syntax valid: double quotes, commas between fields, no comma after the last field.
+API Explorer mengirim request dari browser ke `https://api.jaky.dev`. Request bisa gagal jika API tidak mengizinkan CORS atau memerlukan header autentikasi tertentu. Buka dokumentasi resmi: https://api.jaky.dev/playground
 
-## Notes
-- Profile details are edited from GitHub, not from a visitor's browser, so the public profile updates for everyone after the site deploys.
-- Music upload plays a file locally in the current browser session only; it is not uploaded to the site.
-- Project links are set in `index.html` and can be edited there.
+**Keamanan:** jangan simpan API key rahasia di HTML/JavaScript publik. Field header opsional hanya untuk uji coba pribadi; siapa pun yang mengakses halaman publik dapat melihat kode situs dan request dari browser.
